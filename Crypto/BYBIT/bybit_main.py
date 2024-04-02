@@ -29,6 +29,8 @@ def v1_y(amount, units):
             phase3(newBlock)
 
     def phase3(thisBlock):
+        global output_data
+        global file
         assert type(thisBlock) in [Block_buy, Block_change]
         newBlock = p2p_sell(thisBlock, startBlock.units)
         # print(newBlock)
@@ -38,16 +40,24 @@ def v1_y(amount, units):
         print(newBlock)
 
         if newBlock.amount / startBlock.amount > 1:
-            file.write('BYBIT\n\n' + str(newBlock))
+            # file.write('BYBIT\n\n' + str(newBlock))
+            output_data += 'BYBIT\n\n' + str(newBlock)
+            file = open('../../chains.txt', 'wt')
+            file.write(output_data)
+            file.close()
 
     phase1()
 
+
+output_data = ''
 
 if __name__ == "__main__":
     import time
 
     while True:
-        file = open('../../chains.txt', 'wt')
+        output_data = ''
         v1_y(100000, RUB)
+        file = open('../../chains.txt', 'wt')
+        file.write(output_data)
         file.close()
         time.sleep(120)

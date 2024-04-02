@@ -1,0 +1,13 @@
+BYBIT
+
+1. <b>100000</b> RUB | Старт
+2. <b>1049.8687664041995</b> USDT | <a href="https://www.bybit.com/fiat/trade/otc/profile/144406672/USDT/RUB/item">Покупка</a>
+3. <b>0.3182114783844352</b> ETH | Обмен на споте
+4. <b>100395.72143028931</b> RUB | <a href="https://www.bybit.com/fiat/trade/otc/profile/115068376/ETH/RUB/item">Продажа</a>
+
+BYBIT
+
+1. <b>100000</b> RUB | Старт
+2. <b>1049.8687664041995</b> USDT | <a href="https://www.bybit.com/fiat/trade/otc/profile/144406672/USDT/RUB/item">Покупка</a>
+3. <b>100367.45406824147</b> RUB | <a href="https://www.bybit.com/fiat/trade/otc/profile/41362806/USDT/RUB/item">Продажа</a>
+

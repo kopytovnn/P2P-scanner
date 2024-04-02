@@ -61,8 +61,8 @@ async def suppot(callback: types.CallbackQuery):
                 buttons.SUPPORT_PROJECT,
                 buttons.COOPERATION,
     )
-
-    user_channel_status = await bot.get_chat_member(chat_id='@freep2pchains', user_id=callback.message.from_user.id)
+    print(callback.message.from_user.id)
+    user_channel_status = await bot.get_chat_member(chat_id='@freep2pchains', user_id=callback.from_user.id)
     if user_channel_status.status == 'left':
         environment = Environment(loader=FileSystemLoader("messages/"))
         template = environment.get_template("Subscribe.html")
